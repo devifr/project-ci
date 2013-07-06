@@ -1,0 +1,219 @@
+#tablewrapper {
+	width:98%;
+}
+#tableheader {height:55px}
+.search {float:left; padding:6px; border:1px solid #c6d5e1; background:#fff}
+#tableheader select {float:left; font-size:12px; width:125px; padding:2px 4px 4px}
+#tableheader input {float:left; font-size:12px; width:225px; padding:2px 4px 4px; margin-left:4px}
+.details {float:right; padding-top:12px}
+.details div {float:left; margin-left:15px; font-size:12px}
+.tinytable {width:98%; border-left:1px solid #c6d5e1; border-top:1px solid #c6d5e1; border-bottom:none}
+.tinytable th {
+	background-position:bottom;
+	text-align:left;
+	color:#fff; 
+	border:1px solid #fff;
+	border-right:none;
+	background-image: url(../../images/admin/img/green.jpg);
+}
+.tinytable th h3 {font-size:12px; padding-left:10px; }
+.tinytable td {padding:4px 6px 6px; border-bottom:1px solid #c6d5e1; border-right:1px solid #c6d5e1}
+.tinytable .head h3 {background:url(../../images/admin/sort.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .desc, .sortable .asc {}
+.tinytable .desc h3 {background:url(../../images/admin/desc.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .asc h3 {background:url(../../images/admin/asc.gif) 7px  center no-repeat; cursor:pointer; padding-left:18px}
+.tinytable .head:hover, .tinytable .desc:hover, .tinytable .asc:hover {color:#fff}
+.tinytable .evenrow td {background:#fff}
+.tinytable .oddrow td {background:#ecf2f6}
+.tinytable td.evenselected {background:#ecf2f6}
+.tinytable td.oddselected {background:#dce6ee}
+.tinytable tfoot {background:#fff; font-weight:bold}
+.tinytable tfoot td {padding:6px 8px 8px}
+#tablefooter {height:15px; margin-top:20px}
+#tablenav {float:left}
+#tablenav img {cursor:pointer}
+#tablenav div {float:left; margin-right:15px}
+#tablelocation {float:right; font-size:12px}
+#tablelocation select {margin-right:3px}
+#tablelocation div {float:left; margin-left:15px}
+.page {margin-top:2px; font-style:italic}
+#selectedrow td {background:#c6d5e1}
+
+/**
+ * @version		$Id: mediamanager.css 20196 2011-01-09 02:40:25Z ian $
+ * @copyright	Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+#treeview {
+	padding: 10px;
+	width: 190px;
+	overflow: auto;
+	/*height: 390px;*/
+	border: 0;
+}
+
+#folderview {
+}
+
+#folderview .path {
+	margin-bottom: 10px;
+}
+
+#folderview .view {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 360px;
+}
+
+#folderview input#folderpath {
+	width: 65%;
+	background-color: #f5f5f5;
+}
+
+#folderview input#foldername {
+	width: 20%;
+}
+
+#folderview iframe#folderframe {
+	height: 100%;
+}
+
+#uploads .upload {
+	padding: 4px;
+}
+
+/**
+ * Upload Widget CSS
+ */
+
+#upload-flash {
+	font-size: 12px;
+	margin-left: 5px;
+}
+#upload-flash ul {
+	margin-left: -15px;
+}
+
+#upload-flash .progress {
+	background: url(../images/progress.gif) no-repeat;
+	background-position: +50% 0;
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+#upload-queue {
+	list-style: none;
+	clear:both;
+	margin-left:25px;
+	padding:10px;
+}
+
+#upload-queue li.file {
+	border-bottom: 1px solid #eee;
+	background: url(../images/upload.png) no-repeat 4px 6px;
+	border:1px solid #ccc;
+	overflow: auto;
+}
+
+#upload-queue li.file.file-uploading {
+	background-image: url(../images/uploading.png);
+	background-color: #D9DDE9;
+}
+
+#upload-queue li.file.file-success {
+	background-image: url(../images/success.png);
+}
+
+#upload-queue li.file.file-failed {
+	background-image: url(../images/failed.png);
+}
+
+#upload-queue li.file .file-name {
+	font-size: 1.2em;
+	margin-left: 25px;
+	display: block;
+	clear: left;
+	line-height: 20px;
+	height: 20px;
+	font-weight: bold;
+}
+
+#upload-queue li.file .file-remove {
+	font-size: 0.9em;
+	float: right;
+	line-height: 18px;
+	margin-right: 6px;
+}
+
+
+#upload-queue li.file .file-size {
+	font-size: 0.9em;
+	line-height: 18px;
+	float: right;
+	margin-right: 6px;
+}
+
+#upload-queue li.file .file-info {
+	display: block;
+	margin-left: 44px;
+	font-size: 0.9em;
+	line-height: 18px;
+}
+
+p.overall-title,
+p.current-title,
+p.current-text {
+	margin: 0;
+	padding: 0;
+	font-weight:bold;
+}
+p.overall-title { margin-top: 15px;}
+
+div#upload-flash ul li {
+	float:left;
+	clear:right;
+	margin-left: 10px;
+}
+
+li a#upload-browse,
+li a#upload-clear,
+li a#upload-start {
+	display:block;
+	padding: 3px;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+}
+
+div#media-noimages {
+	width: 100%;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	color:#CCCCCC;
+}
+
+.overall-title, .current-title {
+	font-size:12px;
+}
+
+.thumbnail{
+	height: 40px;
+	border: none;
+	cursor: pointer;
+}
+
+#view-images{
+	border: none;
+	margin: auto;
+	padding: 1px;
+	position: fixed;
+}
+#close-image{
+	color: #000;
+	margin: auto;
+	margin-left: 50%;
+	cursor: pointer;
+	position: absolute;
+}

@@ -1,0 +1,205 @@
+/*
+ * jQuery Nivo Slider v2.6
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */ 
+ 
+#slider-wrapper {
+  width:618px;
+  margin:30px auto;
+  padding:2px;
+  background-color:black;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4);
+}
+
+.nivoSlider {
+  position:relative;
+  background:#fff url(loading.gif) no-repeat 50% 50%;
+  width:945px; /* Make sure your images are the same size */
+  height:212px; /* Make sure your images are the same size */
+}
+
+.nivoSlider img {
+  position:absolute; margin-top:10px;
+  top:0px;
+  left:0px;
+  display:none;
+}
+
+.nivoSlider a {
+  border:0;
+  display:block;
+}
+
+.nivoSlider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  padding:0;
+  margin:0;
+  z-index:6;
+  display:none;
+}
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display:block;
+  position:absolute;
+  z-index:5;
+  height:100%;
+}
+
+.nivo-box {
+  display:block;
+  position:absolute;
+  z-index:5;
+}
+
+.nivo-caption {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  background:#000;
+  color:#fff;
+  opacity:0.8; /* Overridden by captionOpacity setting */
+  width:100%;
+  z-index:8;
+}
+
+.nivo-caption p {
+  padding:5px 10px;
+  margin:0;
+}
+
+.nivo-caption a    {display:inline !important;}
+.nivo-html-caption {display:none;}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position:absolute;
+  top:45%;
+  z-index:9;
+  cursor:pointer;
+}
+
+.nivo-prevNav {left:0px;}
+.nivo-nextNav {right:0px;}
+
+.nivo-controlNav {
+  position:absolute;
+  top:10px;
+  right:15px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+  font:normal 10px Verdana,Arial,Sans-Serif;
+  color:white;
+  text-decoration:none;
+  position:relative;
+  z-index:9;
+  cursor:pointer;
+  background-color:#111;
+  width:17px;
+  padding:2px 0px 3px;
+  margin:0px 1px;
+  text-align:center;
+  display:inline-block;
+  *display:inline;
+}
+.nivo-controlNav a.active {
+  background-color:#3399ff;
+}
+#templatemo_middle{ margin-top:10px;}
+
+.nivo-directionNav a {
+  display:block;
+  width:30px;
+  height:30px;
+  background:url(arrows.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+}
+
+a.nivo-nextNav        {background-position:-30px 0;right:15px;}
+a.nivo-prevNav        {left:15px;}
+
+.nivo-caption         {font:bold 12px Arial,Sans-Serif;}
+.nivo-caption a       {color:#fff;border-bottom:1px dotted #fff;}
+.nivo-caption a:hover {color:#fff;}
+
+#result_search{ }
+.gallery {width:145px; height:100px;}
+.isi-search {
+  cursor: pointer; font-size:11px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+border: solid 1px #F7F7F7;
+  z-index: 99; background-color:#FFF; 
+}
+
+.isi-search:hover {
+  cursor: pointer; background-color: #6CF;   
+}
+
+#image-testi {
+  cursor: pointer; background-color: #6CF;
+  height: 50px;
+  width: 50px;   
+}
+
+.informasi_front {
+  border: 1px solid #86afe7;
+  background: #e7f1ff url(../../images/admin/img/informasi.png) no-repeat left center;
+  float: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #86afe7;
+  padding: 10px;
+  width: 93%;
+  margin-bottom: 20px;
+  padding-left: 3%;
+}
+
+.sukses_front {
+  border: 1px solid #cbe0b5;
+  background: #f7ffe8 url(../../images/admin/img/sukses.png) no-repeat left center;
+  float: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color:#cbe0b5;
+  padding: 10px;
+  width: 93%;
+  margin-bottom: 20px;
+  padding-left: 3%;
+  -moz-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+.gagal_front {
+  border: 1px solid #e78686;
+  background: #ffe1e1 url(../../images/admin/img/gagal.png) no-repeat left center;
+  float: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #e78686;
+  padding: 10px;
+  width: 93%;
+  margin-bottom: 20px;
+  padding-left: 3%;
+  -moz-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
